@@ -1,0 +1,157 @@
+
+/* header */
+@media screen and (max-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header a {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    #barHeader {
+        grid-column: 3 / 4;
+        font-size: 22px;
+        display: flex;
+        justify-self: flex-end;
+        margin: 0 30px;
+    }
+
+
+}
+
+/* link */
+
+@media screen and (max-width: 600px) {
+    .navBar {
+        display: none;
+    }
+
+    .sideBar {
+        display: block;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: #4f5256;
+        position: fixed;
+        top: 0;
+        padding-top: 60px;
+        z-index: 1;
+        transition: right 0.3s ease-in-out;
+    }
+
+    #closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 45%;
+        cursor: pointer;
+        font-size: 27px;
+    }
+
+    .sideBar.active {
+        right: 0;
+    }
+    
+    .sideMainLink {
+        list-style: none;
+        padding: 20px 0;
+    }
+    
+    .sideMainLink a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 17px 20px;
+    }
+    
+    .sideMainLink a:hover {
+        background-color: #313335;
+    }
+    
+    .sideBar button {
+        background-color: #4f5256;
+        outline: none;
+        border: none;
+        color: white;
+        padding: 17px 20px;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .sideBar button:hover {
+        background-color: #313335;
+    }
+
+    .sideBar .dropDownContainer:hover .dropDownContent {
+        display: block;
+    }
+    
+    .dropDownContainer {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .dropDownContent {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        background-color: #4f5256;
+    }
+
+    .musicContent {
+        left: -82px;
+        top: 0;
+    }
+
+    .moreContent {
+        left: -105px;
+        top: 0;
+    }
+    
+    .dropDownContent a{
+        padding: 16px 17px;
+        display: block;
+    }
+    
+    .dropDownContent a:hover {
+        background-color: #313335;
+    }
+    
+    .sideBar button:hover .dropDownContent {
+        display: block;
+    }
+
+    .socialLinks {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* store */
+
+@media screen and (max-width: 600px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+/* footer */
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
